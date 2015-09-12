@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PredMedBud</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_signup">signup</string>
+    <string name="title_activity_home">home</string>
+    <string name="title_activity_symptom">symptom</string>
+
+    <string-array name="symptoms_array">
+        <item>Fever</item>
+        <item>Cough</item>
+        <item>Head ache</item>
+        <item>Body pain</item>
+        <item>Sore throat</item>
+        <item>Abdomen pain</item>
+        <item>Eye redness</item>
+        <item>Hair fall</item>
+    </string-array>
+    <string-array name="intensity_array">
+        <item>Low</item>
+        <item>Moderate</item>
+        <item>Severe</item>
+    </string-array>
+    <string-array name="duration_array">
+        <item>One day</item>
+        <item>One week</item>
+        <item>One month</item>
+    </string-array>
+
+    <string name="title_activity_diagnosis">diagnosis</string>
+    <string name="title_activity_expenditure">expenditure</string>
+
+</resources>
