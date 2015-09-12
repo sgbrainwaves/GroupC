@@ -8,8 +8,9 @@
 
 #import "detailForUserViewController.h"
 
-@interface detailForUserViewController ()
-
+@interface detailForUserViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *facilities;
 @end
 
 @implementation detailForUserViewController
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.tableView.layer.borderColor = [UIColor grayColor].CGColor;
+    self.tableView.layer.borderWidth = 1.0;
+    self.tableView.layer.cornerRadius = 3.0;
+    
+    self.facilities = [[NSArray alloc] initWithObjects:@"Electricity Bill Payment",@"Check Deposit",@"Cash Deposit",@"Water Bill Payment", @"Passbook Printing",@"Account Opening", nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,6 +35,18 @@
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Atm Status" message:@"Are you sure about status of ATM?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     [alert show];
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.facilities.count;
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    cell.textLabel.text = [self.facilities objectAtIndex:indexPath.row];
+    return cell;
 }
 
 /*

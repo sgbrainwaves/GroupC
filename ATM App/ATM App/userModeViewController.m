@@ -9,7 +9,11 @@
 #import "userModeViewController.h"
 #import "atmTableViewController.h"
 
-@interface userModeViewController ()
+@interface userModeViewController () <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *locationTextField;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
+@property (weak, nonatomic) IBOutlet UIButton *locationButton;
+@property (weak, nonatomic) IBOutlet UIButton *rangeButton;
 
 @end
 
@@ -18,6 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.searchButton.layer.cornerRadius = 5.0;
+    self.locationButton.layer.cornerRadius = 5.0;
+    self.rangeButton.layer.cornerRadius = 5.0;
+    self.locationTextField.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +47,17 @@
     ATVC.locationName = @"xyz";
     [self.navigationController pushViewController:ATVC animated:YES];
     NSLog(@"using current location");
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 /*

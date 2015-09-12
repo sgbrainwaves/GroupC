@@ -27,6 +27,9 @@
 		3120DF991BA46E71001A1F78 /* AtmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF981BA46E71001A1F78 /* AtmObject.m */; };
 		3120DF9D1BA47760001A1F78 /* unavailable.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DF9C1BA47760001A1F78 /* unavailable.png */; };
 		3120DFA11BA4867E001A1F78 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DFA01BA4867E001A1F78 /* background.png */; };
+		3120DFA31BA48C68001A1F78 /* smallNavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DFA21BA48C68001A1F78 /* smallNavBar.png */; };
+		3120DFA61BA492A3001A1F78 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DFA41BA492A3001A1F78 /* cross.png */; };
+		3120DFA71BA492A3001A1F78 /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DFA51BA492A3001A1F78 /* tick.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		3120DF981BA46E71001A1F78 /* AtmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmObject.m; sourceTree = "<group>"; };
 		3120DF9C1BA47760001A1F78 /* unavailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unavailable.png; sourceTree = "<group>"; };
 		3120DFA01BA4867E001A1F78 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		3120DFA21BA48C68001A1F78 /* smallNavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallNavBar.png; sourceTree = "<group>"; };
+		3120DFA41BA492A3001A1F78 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		3120DFA51BA492A3001A1F78 /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,9 @@
 		3120DF921BA45EFE001A1F78 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3120DFA41BA492A3001A1F78 /* cross.png */,
+				3120DFA51BA492A3001A1F78 /* tick.png */,
+				3120DFA21BA48C68001A1F78 /* smallNavBar.png */,
 				3120DFA01BA4867E001A1F78 /* background.png */,
 				3120DF9C1BA47760001A1F78 /* unavailable.png */,
 				3120DF931BA45F98001A1F78 /* notWorking.png */,
@@ -281,11 +290,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3120DFA61BA492A3001A1F78 /* cross.png in Resources */,
 				3120DF961BA45F98001A1F78 /* working.png in Resources */,
 				3120DF5E1BA41CA9001A1F78 /* Main.storyboard in Resources */,
 				3120DFA11BA4867E001A1F78 /* background.png in Resources */,
 				3120DF631BA41CA9001A1F78 /* LaunchScreen.xib in Resources */,
 				3120DF601BA41CA9001A1F78 /* Images.xcassets in Resources */,
+				3120DFA71BA492A3001A1F78 /* tick.png in Resources */,
+				3120DFA31BA48C68001A1F78 /* smallNavBar.png in Resources */,
 				3120DF9D1BA47760001A1F78 /* unavailable.png in Resources */,
 				3120DF951BA45F98001A1F78 /* notWorking.png in Resources */,
 			);
@@ -511,6 +523,7 @@
 				3120DF741BA41CA9001A1F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3120DF751BA41CA9001A1F78 /* Build configuration list for PBXNativeTarget "ATM AppTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +532,7 @@
 				3120DF771BA41CA9001A1F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
