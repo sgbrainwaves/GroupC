@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3120DF551BA41CA9001A1F78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF541BA41CA9001A1F78 /* main.m */; };
+		3120DF581BA41CA9001A1F78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF571BA41CA9001A1F78 /* AppDelegate.m */; };
+		3120DF5B1BA41CA9001A1F78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF5A1BA41CA9001A1F78 /* ViewController.m */; };
+		3120DF5E1BA41CA9001A1F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3120DF5C1BA41CA9001A1F78 /* Main.storyboard */; };
+		3120DF601BA41CA9001A1F78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3120DF5F1BA41CA9001A1F78 /* Images.xcassets */; };
+		3120DF631BA41CA9001A1F78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3120DF611BA41CA9001A1F78 /* LaunchScreen.xib */; };
+		3120DF6F1BA41CA9001A1F78 /* ATM_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF6E1BA41CA9001A1F78 /* ATM_AppTests.m */; };
+		3120DF7A1BA437E6001A1F78 /* userModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF791BA437E6001A1F78 /* userModeViewController.m */; };
+		3120DF7D1BA437F8001A1F78 /* managerModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF7C1BA437F8001A1F78 /* managerModeViewController.m */; };
+		3120DF801BA43D4B001A1F78 /* atmTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF7F1BA43D4B001A1F78 /* atmTableViewController.m */; };
+		3120DF831BA43DDB001A1F78 /* detailForUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF821BA43DDB001A1F78 /* detailForUserViewController.m */; };
+		3120DF861BA43FEE001A1F78 /* mgAtmTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF851BA43FEE001A1F78 /* mgAtmTableViewController.m */; };
+		3120DF8B1BA444A0001A1F78 /* userModeCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF8A1BA444A0001A1F78 /* userModeCustomCell.m */; };
+		3120DF8E1BA45503001A1F78 /* mgModeCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF8D1BA45503001A1F78 /* mgModeCustomCell.m */; };
+		3120DF911BA45691001A1F78 /* detailForManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF901BA45691001A1F78 /* detailForManagerViewController.m */; };
+		3120DF951BA45F98001A1F78 /* notWorking.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DF931BA45F98001A1F78 /* notWorking.png */; };
+		3120DF961BA45F98001A1F78 /* working.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DF941BA45F98001A1F78 /* working.png */; };
+		3120DF991BA46E71001A1F78 /* AtmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DF981BA46E71001A1F78 /* AtmObject.m */; };
+		3120DF9D1BA47760001A1F78 /* unavailable.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DF9C1BA47760001A1F78 /* unavailable.png */; };
+		3120DFA11BA4867E001A1F78 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DFA01BA4867E001A1F78 /* background.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3120DF691BA41CA9001A1F78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3120DF471BA41CA9001A1F78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3120DF4E1BA41CA9001A1F78;
+			remoteInfo = "ATM App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3120DF4F1BA41CA9001A1F78 /* ATM App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ATM App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3120DF531BA41CA9001A1F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3120DF541BA41CA9001A1F78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3120DF561BA41CA9001A1F78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3120DF571BA41CA9001A1F78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3120DF591BA41CA9001A1F78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3120DF5A1BA41CA9001A1F78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3120DF5D1BA41CA9001A1F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3120DF5F1BA41CA9001A1F78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3120DF621BA41CA9001A1F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3120DF681BA41CA9001A1F78 /* ATM AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ATM AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3120DF6D1BA41CA9001A1F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3120DF6E1BA41CA9001A1F78 /* ATM_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATM_AppTests.m; sourceTree = "<group>"; };
+		3120DF781BA437E6001A1F78 /* userModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userModeViewController.h; sourceTree = "<group>"; };
+		3120DF791BA437E6001A1F78 /* userModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userModeViewController.m; sourceTree = "<group>"; };
+		3120DF7B1BA437F8001A1F78 /* managerModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = managerModeViewController.h; sourceTree = "<group>"; };
+		3120DF7C1BA437F8001A1F78 /* managerModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = managerModeViewController.m; sourceTree = "<group>"; };
+		3120DF7E1BA43D4B001A1F78 /* atmTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atmTableViewController.h; sourceTree = "<group>"; };
+		3120DF7F1BA43D4B001A1F78 /* atmTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atmTableViewController.m; sourceTree = "<group>"; };
+		3120DF811BA43DDB001A1F78 /* detailForUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailForUserViewController.h; sourceTree = "<group>"; };
+		3120DF821BA43DDB001A1F78 /* detailForUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailForUserViewController.m; sourceTree = "<group>"; };
+		3120DF841BA43FEE001A1F78 /* mgAtmTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgAtmTableViewController.h; sourceTree = "<group>"; };
+		3120DF851BA43FEE001A1F78 /* mgAtmTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgAtmTableViewController.m; sourceTree = "<group>"; };
+		3120DF891BA444A0001A1F78 /* userModeCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userModeCustomCell.h; sourceTree = "<group>"; };
+		3120DF8A1BA444A0001A1F78 /* userModeCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userModeCustomCell.m; sourceTree = "<group>"; };
+		3120DF8C1BA45503001A1F78 /* mgModeCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgModeCustomCell.h; sourceTree = "<group>"; };
+		3120DF8D1BA45503001A1F78 /* mgModeCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgModeCustomCell.m; sourceTree = "<group>"; };
+		3120DF8F1BA45691001A1F78 /* detailForManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailForManagerViewController.h; sourceTree = "<group>"; };
+		3120DF901BA45691001A1F78 /* detailForManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailForManagerViewController.m; sourceTree = "<group>"; };
+		3120DF931BA45F98001A1F78 /* notWorking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notWorking.png; sourceTree = "<group>"; };
+		3120DF941BA45F98001A1F78 /* working.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = working.png; sourceTree = "<group>"; };
+		3120DF971BA46E71001A1F78 /* AtmObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmObject.h; sourceTree = "<group>"; };
+		3120DF981BA46E71001A1F78 /* AtmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmObject.m; sourceTree = "<group>"; };
+		3120DF9C1BA47760001A1F78 /* unavailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unavailable.png; sourceTree = "<group>"; };
+		3120DFA01BA4867E001A1F78 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3120DF4C1BA41CA9001A1F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3120DF651BA41CA9001A1F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3120DF461BA41CA9001A1F78 = {
+			isa = PBXGroup;
+			children = (
+				3120DF511BA41CA9001A1F78 /* ATM App */,
+				3120DF921BA45EFE001A1F78 /* images */,
+				3120DF6B1BA41CA9001A1F78 /* ATM AppTests */,
+				3120DF501BA41CA9001A1F78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3120DF501BA41CA9001A1F78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3120DF4F1BA41CA9001A1F78 /* ATM App.app */,
+				3120DF681BA41CA9001A1F78 /* ATM AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3120DF511BA41CA9001A1F78 /* ATM App */ = {
+			isa = PBXGroup;
+			children = (
+				3120DF561BA41CA9001A1F78 /* AppDelegate.h */,
+				3120DF571BA41CA9001A1F78 /* AppDelegate.m */,
+				3120DF591BA41CA9001A1F78 /* ViewController.h */,
+				3120DF5A1BA41CA9001A1F78 /* ViewController.m */,
+				3120DF5C1BA41CA9001A1F78 /* Main.storyboard */,
+				3120DF871BA43FF7001A1F78 /* User Mode VC */,
+				3120DF881BA4401E001A1F78 /* Manager Mode VC */,
+				3120DF5F1BA41CA9001A1F78 /* Images.xcassets */,
+				3120DF611BA41CA9001A1F78 /* LaunchScreen.xib */,
+				3120DF521BA41CA9001A1F78 /* Supporting Files */,
+				3120DF971BA46E71001A1F78 /* AtmObject.h */,
+				3120DF981BA46E71001A1F78 /* AtmObject.m */,
+			);
+			path = "ATM App";
+			sourceTree = "<group>";
+		};
+		3120DF521BA41CA9001A1F78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3120DF531BA41CA9001A1F78 /* Info.plist */,
+				3120DF541BA41CA9001A1F78 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3120DF6B1BA41CA9001A1F78 /* ATM AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3120DF6E1BA41CA9001A1F78 /* ATM_AppTests.m */,
+				3120DF6C1BA41CA9001A1F78 /* Supporting Files */,
+			);
+			path = "ATM AppTests";
+			sourceTree = "<group>";
+		};
+		3120DF6C1BA41CA9001A1F78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3120DF6D1BA41CA9001A1F78 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3120DF871BA43FF7001A1F78 /* User Mode VC */ = {
+			isa = PBXGroup;
+			children = (
+				3120DF781BA437E6001A1F78 /* userModeViewController.h */,
+				3120DF791BA437E6001A1F78 /* userModeViewController.m */,
+				3120DF7E1BA43D4B001A1F78 /* atmTableViewController.h */,
+				3120DF7F1BA43D4B001A1F78 /* atmTableViewController.m */,
+				3120DF811BA43DDB001A1F78 /* detailForUserViewController.h */,
+				3120DF821BA43DDB001A1F78 /* detailForUserViewController.m */,
+				3120DF891BA444A0001A1F78 /* userModeCustomCell.h */,
+				3120DF8A1BA444A0001A1F78 /* userModeCustomCell.m */,
+			);
+			name = "User Mode VC";
+			sourceTree = "<group>";
+		};
+		3120DF881BA4401E001A1F78 /* Manager Mode VC */ = {
+			isa = PBXGroup;
+			children = (
+				3120DF7B1BA437F8001A1F78 /* managerModeViewController.h */,
+				3120DF7C1BA437F8001A1F78 /* managerModeViewController.m */,
+				3120DF841BA43FEE001A1F78 /* mgAtmTableViewController.h */,
+				3120DF851BA43FEE001A1F78 /* mgAtmTableViewController.m */,
+				3120DF8C1BA45503001A1F78 /* mgModeCustomCell.h */,
+				3120DF8D1BA45503001A1F78 /* mgModeCustomCell.m */,
+				3120DF8F1BA45691001A1F78 /* detailForManagerViewController.h */,
+				3120DF901BA45691001A1F78 /* detailForManagerViewController.m */,
+			);
+			name = "Manager Mode VC";
+			sourceTree = "<group>";
+		};
+		3120DF921BA45EFE001A1F78 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3120DFA01BA4867E001A1F78 /* background.png */,
+				3120DF9C1BA47760001A1F78 /* unavailable.png */,
+				3120DF931BA45F98001A1F78 /* notWorking.png */,
+				3120DF941BA45F98001A1F78 /* working.png */,
+			);
+			name = images;
+			path = "ATM App";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3120DF4E1BA41CA9001A1F78 /* ATM App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3120DF721BA41CA9001A1F78 /* Build configuration list for PBXNativeTarget "ATM App" */;
+			buildPhases = (
+				3120DF4B1BA41CA9001A1F78 /* Sources */,
+				3120DF4C1BA41CA9001A1F78 /* Frameworks */,
+				3120DF4D1BA41CA9001A1F78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ATM App";
+			productName = "ATM App";
+			productReference = 3120DF4F1BA41CA9001A1F78 /* ATM App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3120DF671BA41CA9001A1F78 /* ATM AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3120DF751BA41CA9001A1F78 /* Build configuration list for PBXNativeTarget "ATM AppTests" */;
+			buildPhases = (
+				3120DF641BA41CA9001A1F78 /* Sources */,
+				3120DF651BA41CA9001A1F78 /* Frameworks */,
+				3120DF661BA41CA9001A1F78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3120DF6A1BA41CA9001A1F78 /* PBXTargetDependency */,
+			);
+			name = "ATM AppTests";
+			productName = "ATM AppTests";
+			productReference = 3120DF681BA41CA9001A1F78 /* ATM AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3120DF471BA41CA9001A1F78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nikhil Anurag";
+				TargetAttributes = {
+					3120DF4E1BA41CA9001A1F78 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					3120DF671BA41CA9001A1F78 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 3120DF4E1BA41CA9001A1F78;
+					};
+				};
+			};
+			buildConfigurationList = 3120DF4A1BA41CA9001A1F78 /* Build configuration list for PBXProject "ATM App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3120DF461BA41CA9001A1F78;
+			productRefGroup = 3120DF501BA41CA9001A1F78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3120DF4E1BA41CA9001A1F78 /* ATM App */,
+				3120DF671BA41CA9001A1F78 /* ATM AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3120DF4D1BA41CA9001A1F78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3120DF961BA45F98001A1F78 /* working.png in Resources */,
+				3120DF5E1BA41CA9001A1F78 /* Main.storyboard in Resources */,
+				3120DFA11BA4867E001A1F78 /* background.png in Resources */,
+				3120DF631BA41CA9001A1F78 /* LaunchScreen.xib in Resources */,
+				3120DF601BA41CA9001A1F78 /* Images.xcassets in Resources */,
+				3120DF9D1BA47760001A1F78 /* unavailable.png in Resources */,
+				3120DF951BA45F98001A1F78 /* notWorking.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3120DF661BA41CA9001A1F78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3120DF4B1BA41CA9001A1F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3120DF801BA43D4B001A1F78 /* atmTableViewController.m in Sources */,
+				3120DF5B1BA41CA9001A1F78 /* ViewController.m in Sources */,
+				3120DF861BA43FEE001A1F78 /* mgAtmTableViewController.m in Sources */,
+				3120DF8B1BA444A0001A1F78 /* userModeCustomCell.m in Sources */,
+				3120DF581BA41CA9001A1F78 /* AppDelegate.m in Sources */,
+				3120DF831BA43DDB001A1F78 /* detailForUserViewController.m in Sources */,
+				3120DF7A1BA437E6001A1F78 /* userModeViewController.m in Sources */,
+				3120DF991BA46E71001A1F78 /* AtmObject.m in Sources */,
+				3120DF8E1BA45503001A1F78 /* mgModeCustomCell.m in Sources */,
+				3120DF551BA41CA9001A1F78 /* main.m in Sources */,
+				3120DF911BA45691001A1F78 /* detailForManagerViewController.m in Sources */,
+				3120DF7D1BA437F8001A1F78 /* managerModeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3120DF641BA41CA9001A1F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3120DF6F1BA41CA9001A1F78 /* ATM_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3120DF6A1BA41CA9001A1F78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3120DF4E1BA41CA9001A1F78 /* ATM App */;
+			targetProxy = 3120DF691BA41CA9001A1F78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3120DF5C1BA41CA9001A1F78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3120DF5D1BA41CA9001A1F78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3120DF611BA41CA9001A1F78 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3120DF621BA41CA9001A1F78 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3120DF701BA41CA9001A1F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3120DF711BA41CA9001A1F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3120DF731BA41CA9001A1F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ATM App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3120DF741BA41CA9001A1F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ATM App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3120DF761BA41CA9001A1F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ATM AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATM App.app/ATM App";
+			};
+			name = Debug;
+		};
+		3120DF771BA41CA9001A1F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ATM AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATM App.app/ATM App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3120DF4A1BA41CA9001A1F78 /* Build configuration list for PBXProject "ATM App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3120DF701BA41CA9001A1F78 /* Debug */,
+				3120DF711BA41CA9001A1F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3120DF721BA41CA9001A1F78 /* Build configuration list for PBXNativeTarget "ATM App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3120DF731BA41CA9001A1F78 /* Debug */,
+				3120DF741BA41CA9001A1F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3120DF751BA41CA9001A1F78 /* Build configuration list for PBXNativeTarget "ATM AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3120DF761BA41CA9001A1F78 /* Debug */,
+				3120DF771BA41CA9001A1F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3120DF471BA41CA9001A1F78 /* Project object */;
+}
