@@ -1,0 +1,3 @@
+create table details(acc int primary key, name text, email text, addr text, mob text, photo text);
+create table balance(acc int, bal real, foreign key(acc) references details(acc));
+create table trans(tid int primary key, acc int, date text, type text, amt real, remark text, foreign key(acc) references details(acc));
