@@ -10,6 +10,6 @@
 
 @interface atmTableViewController : UIViewController
 
-@property (strong, nonatomic) NSString *locationName;
+@property (strong, nonatomic) NSString *loginId;
 
 @end

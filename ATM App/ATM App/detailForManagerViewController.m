@@ -7,6 +7,7 @@
 //
 
 #import "detailForManagerViewController.h"
+#import "ExtraDetail.h"
 
 @interface detailForManagerViewController ()
 
@@ -20,12 +21,28 @@
     
     NSLog(@"%@", self.atmObject.address);
     self.statusLabel.text = self.atmObject.status;
-    self.totTransLabel.text = [NSString stringWithFormat:@"%ld", self.atmObject.tot_trans];
-    self.peakTimeLabel.text = self.atmObject.peakTime;
-    self.failureLabel.text = [NSString stringWithFormat:@"%d",self.atmObject.failures];
-    self.r1Label.text = [NSString stringWithFormat:@"%d",self.atmObject.r1];
-    self.r2Label.text = [NSString stringWithFormat:@"%d",self.atmObject.r2];
-    self.r3Label.text = [NSString stringWithFormat:@"%d",self.atmObject.r3];
+    NSString *atmid = self.atmObject.atmID;
+    
+    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"ExtraDet"];
+    NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    ExtraDetail *ed = [[ExtraDetail alloc] init];
+    for(int i = 0; i < array.count; i++)
+    {
+        ExtraDetail *ED = [array objectAtIndex:i];
+        
+        if([ED.atmID isEqualToString:atmid])
+        {
+            ed = ED;
+            break;
+        }
+    }
+    
+    self.totTransLabel.text = [NSString stringWithFormat:@"%ld", ed.tot_tran];
+    self.peakTimeLabel.text = ed.peakTime;
+    self.failureLabel.text = [NSString stringWithFormat:@"%d",ed.fails];
+    self.r1Label.text = [NSString stringWithFormat:@"%d",ed.r1];
+    self.r2Label.text = [NSString stringWithFormat:@"%d",ed.r2];
+    self.r3Label.text = [NSString stringWithFormat:@"%d",ed.r3];
 }
 
 - (void)didReceiveMemoryWarning {

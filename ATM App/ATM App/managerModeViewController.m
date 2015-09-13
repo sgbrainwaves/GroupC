@@ -24,8 +24,8 @@
     self.loginIdTextField.delegate = self;
     self.passwordTextField.delegate = self;
     
-    self.ids = [[NSArray alloc] initWithObjects:@"abc",@"xyz",@"pqr", nil];
-    self.password = [[NSArray alloc] initWithObjects:@"123",@"456",@"789", nil];
+    self.ids = [[NSArray alloc] initWithObjects:@"abc",@"xyz", nil];
+    self.password = [[NSArray alloc] initWithObjects:@"123",@"456", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,10 +65,6 @@
                 
             case 1:
                 MATVC.bankName = @"SBI";
-                break;
-                
-            case 2:
-                MATVC.bankName = @"HDFC";
                 break;
                 
             default:

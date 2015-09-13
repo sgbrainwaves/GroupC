@@ -30,6 +30,12 @@
 		3120DFA31BA48C68001A1F78 /* smallNavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DFA21BA48C68001A1F78 /* smallNavBar.png */; };
 		3120DFA61BA492A3001A1F78 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DFA41BA492A3001A1F78 /* cross.png */; };
 		3120DFA71BA492A3001A1F78 /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3120DFA51BA492A3001A1F78 /* tick.png */; };
+		3120DFAA1BA4A9F4001A1F78 /* ExtraDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DFA91BA4A9F4001A1F78 /* ExtraDetail.m */; };
+		3120DFAD1BA4AA7D001A1F78 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DFAC1BA4AA7D001A1F78 /* User.m */; };
+		3120DFB01BA4AAC5001A1F78 /* Atm_Usr.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DFAF1BA4AAC5001A1F78 /* Atm_Usr.m */; };
+		3120DFB31BA4AB3D001A1F78 /* Atm_Trans.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DFB21BA4AB3D001A1F78 /* Atm_Trans.m */; };
+		3120DFB71BA4BEE6001A1F78 /* userLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DFB61BA4BEE6001A1F78 /* userLoginViewController.m */; };
+		3120DFBA1BA4FA9B001A1F78 /* reviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120DFB91BA4FA9B001A1F78 /* reviewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +87,18 @@
 		3120DFA21BA48C68001A1F78 /* smallNavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallNavBar.png; sourceTree = "<group>"; };
 		3120DFA41BA492A3001A1F78 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		3120DFA51BA492A3001A1F78 /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
+		3120DFA81BA4A9F4001A1F78 /* ExtraDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraDetail.h; sourceTree = "<group>"; };
+		3120DFA91BA4A9F4001A1F78 /* ExtraDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraDetail.m; sourceTree = "<group>"; };
+		3120DFAB1BA4AA7D001A1F78 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3120DFAC1BA4AA7D001A1F78 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		3120DFAE1BA4AAC5001A1F78 /* Atm_Usr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atm_Usr.h; sourceTree = "<group>"; };
+		3120DFAF1BA4AAC5001A1F78 /* Atm_Usr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atm_Usr.m; sourceTree = "<group>"; };
+		3120DFB11BA4AB3D001A1F78 /* Atm_Trans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atm_Trans.h; sourceTree = "<group>"; };
+		3120DFB21BA4AB3D001A1F78 /* Atm_Trans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atm_Trans.m; sourceTree = "<group>"; };
+		3120DFB51BA4BEE6001A1F78 /* userLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userLoginViewController.h; sourceTree = "<group>"; };
+		3120DFB61BA4BEE6001A1F78 /* userLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userLoginViewController.m; sourceTree = "<group>"; };
+		3120DFB81BA4FA9B001A1F78 /* reviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reviewViewController.h; sourceTree = "<group>"; };
+		3120DFB91BA4FA9B001A1F78 /* reviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reviewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +141,7 @@
 		3120DF511BA41CA9001A1F78 /* ATM App */ = {
 			isa = PBXGroup;
 			children = (
+				3120DFB41BA4AC55001A1F78 /* DataBaseObjects */,
 				3120DF561BA41CA9001A1F78 /* AppDelegate.h */,
 				3120DF571BA41CA9001A1F78 /* AppDelegate.m */,
 				3120DF591BA41CA9001A1F78 /* ViewController.h */,
@@ -133,8 +152,6 @@
 				3120DF5F1BA41CA9001A1F78 /* Images.xcassets */,
 				3120DF611BA41CA9001A1F78 /* LaunchScreen.xib */,
 				3120DF521BA41CA9001A1F78 /* Supporting Files */,
-				3120DF971BA46E71001A1F78 /* AtmObject.h */,
-				3120DF981BA46E71001A1F78 /* AtmObject.m */,
 			);
 			path = "ATM App";
 			sourceTree = "<group>";
@@ -176,6 +193,10 @@
 				3120DF821BA43DDB001A1F78 /* detailForUserViewController.m */,
 				3120DF891BA444A0001A1F78 /* userModeCustomCell.h */,
 				3120DF8A1BA444A0001A1F78 /* userModeCustomCell.m */,
+				3120DFB51BA4BEE6001A1F78 /* userLoginViewController.h */,
+				3120DFB61BA4BEE6001A1F78 /* userLoginViewController.m */,
+				3120DFB81BA4FA9B001A1F78 /* reviewViewController.h */,
+				3120DFB91BA4FA9B001A1F78 /* reviewViewController.m */,
 			);
 			name = "User Mode VC";
 			sourceTree = "<group>";
@@ -208,6 +229,23 @@
 			);
 			name = images;
 			path = "ATM App";
+			sourceTree = "<group>";
+		};
+		3120DFB41BA4AC55001A1F78 /* DataBaseObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3120DF971BA46E71001A1F78 /* AtmObject.h */,
+				3120DF981BA46E71001A1F78 /* AtmObject.m */,
+				3120DFA81BA4A9F4001A1F78 /* ExtraDetail.h */,
+				3120DFA91BA4A9F4001A1F78 /* ExtraDetail.m */,
+				3120DFAB1BA4AA7D001A1F78 /* User.h */,
+				3120DFAC1BA4AA7D001A1F78 /* User.m */,
+				3120DFAE1BA4AAC5001A1F78 /* Atm_Usr.h */,
+				3120DFAF1BA4AAC5001A1F78 /* Atm_Usr.m */,
+				3120DFB11BA4AB3D001A1F78 /* Atm_Trans.h */,
+				3120DFB21BA4AB3D001A1F78 /* Atm_Trans.m */,
+			);
+			name = DataBaseObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,16 +357,22 @@
 			files = (
 				3120DF801BA43D4B001A1F78 /* atmTableViewController.m in Sources */,
 				3120DF5B1BA41CA9001A1F78 /* ViewController.m in Sources */,
+				3120DFB01BA4AAC5001A1F78 /* Atm_Usr.m in Sources */,
 				3120DF861BA43FEE001A1F78 /* mgAtmTableViewController.m in Sources */,
 				3120DF8B1BA444A0001A1F78 /* userModeCustomCell.m in Sources */,
 				3120DF581BA41CA9001A1F78 /* AppDelegate.m in Sources */,
 				3120DF831BA43DDB001A1F78 /* detailForUserViewController.m in Sources */,
 				3120DF7A1BA437E6001A1F78 /* userModeViewController.m in Sources */,
+				3120DFAA1BA4A9F4001A1F78 /* ExtraDetail.m in Sources */,
+				3120DFAD1BA4AA7D001A1F78 /* User.m in Sources */,
 				3120DF991BA46E71001A1F78 /* AtmObject.m in Sources */,
 				3120DF8E1BA45503001A1F78 /* mgModeCustomCell.m in Sources */,
+				3120DFBA1BA4FA9B001A1F78 /* reviewViewController.m in Sources */,
 				3120DF551BA41CA9001A1F78 /* main.m in Sources */,
 				3120DF911BA45691001A1F78 /* detailForManagerViewController.m in Sources */,
 				3120DF7D1BA437F8001A1F78 /* managerModeViewController.m in Sources */,
+				3120DFB71BA4BEE6001A1F78 /* userLoginViewController.m in Sources */,
+				3120DFB31BA4AB3D001A1F78 /* Atm_Trans.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,6 @@
 
 @interface userModeViewController : UIViewController
 
+@property (strong, nonatomic) NSString *loginId;
+
 @end

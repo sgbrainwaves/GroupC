@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AtmObject.h"
 
 @interface detailForUserViewController : UIViewController
+
+@property (strong, nonatomic) AtmObject *myAtm;
+@property (strong, nonatomic) NSString *userId;
 
 @end

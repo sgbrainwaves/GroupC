@@ -15,7 +15,6 @@
 
 @property (strong, nonatomic) NSArray *alAtms;
 @property (strong, nonatomic) NSArray *sbiAtms;
-@property (strong, nonatomic) NSArray *hdfcAtms;
 @property (strong, nonatomic) NSArray *ATMs;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -48,11 +47,6 @@
         self.ATMs = [[NSArray alloc] initWithArray:self.sbiAtms];
         return self.sbiAtms.count;
     }
-    else if ([self.bankName isEqualToString:@"HDFC"])
-    {
-        self.ATMs = [[NSArray alloc] initWithArray:self.hdfcAtms];
-        return self.hdfcAtms.count;
-    }
     else
         return 0;
 }
@@ -64,9 +58,9 @@
     cell.atmNameLabel.text = [NSString stringWithFormat:@"%@_%@",self.bankName, atm.atmID];
     cell.addressLabel.text = atm.address;
     
-    if([atm.status isEqualToString:@"working"])
+    if([atm.status isEqualToString:@"Working"])
         cell.statusImageView.image = [UIImage imageNamed:@"working.png"];
-    else if([atm.status isEqualToString:@"failure"])
+    else if([atm.status isEqualToString:@"NotWorking"])
         cell.statusImageView.image = [UIImage imageNamed:@"notWorking.png"];
     else
         cell.statusImageView.image = [UIImage imageNamed:@"unavailable.png"];
@@ -100,7 +94,7 @@
 
 -(void)prepareDataBase
 {
-    AtmObject *a1 = [[AtmObject alloc] init];
+    /*AtmObject *a1 = [[AtmObject alloc] init];
     a1.atmID = @"1";
     a1.address = @"Near Basavangudi Police Station";
     a1.status = @"working";
@@ -179,7 +173,59 @@
     
     self.alAtms = [[NSArray alloc] initWithObjects:a1,a2,a3, nil];
     self.sbiAtms = [[NSArray alloc] initWithObjects:a4,a5, nil];
-    self.hdfcAtms = [[NSArray alloc] initWithObjects:a6,a7, nil];
+    self.hdfcAtms = [[NSArray alloc] initWithObjects:a6,a7, nil];*/
+    
+    /*
+     @property (strong, nonatomic) NSString *atmID;
+     @property (strong, nonatomic) NSString *bank;
+     @property (strong, nonatomic) NSMutableArray *services;
+     @property (strong, nonatomic) NSString *address;
+     @property (strong, nonatomic) NSString *status;
+     @property (strong, nonatomic) NSString *dist;
+     */
+    
+    AtmObject *a1 = [[AtmObject alloc] init];
+    a1.atmID = @"ALH_1";
+    a1.bank = @"Allahabad Bank";
+    a1.services = [[NSMutableArray alloc] initWithObjects:@"", nil];
+    a1.status = @"Working";
+    a1.dist = @"1.1 Km";
+    a1.address = @"Jayanagar 3rd Block 7th main";
+    
+    AtmObject *a2 = [[AtmObject alloc] init];
+    a2.atmID = @"ALH_2";
+    a2.bank = @"Allahabad Bank";
+    a2.services = [[NSMutableArray alloc] initWithObjects:@"", nil];
+    a2.status = @"NotWorking";
+    a2.dist = @"1.6 Km";
+    a2.address = @"Basavanagudi";
+    
+    AtmObject *a3 = [[AtmObject alloc] init];
+    a3.atmID = @"SB_1";
+    a3.bank = @"SBI";
+    a3.services = [[NSMutableArray alloc] initWithObjects:@"", nil];
+    a3.status = @"Working";
+    a3.dist = @"2.5 Km";
+    a3.address = @"Jayanagar 3rd block 14th main ";
+    
+    AtmObject *a4 = [[AtmObject alloc] init];
+    a4.atmID = @"SB_2";
+    a4.bank = @"SBI";
+    a4.services = [[NSMutableArray alloc] initWithObjects:@"", nil];
+    a4.status = @"NotWorking";
+    a4.dist = @"2.3 Km";
+    a4.address = @"Gandhi Bazaar ";
+    
+    AtmObject *a5 = [[AtmObject alloc] init];
+    a5.atmID = @"SB_3";
+    a5.bank = @"SBI";
+    a5.services = [[NSMutableArray alloc] initWithObjects:@"", nil];
+    a5.status = @"Unknown";
+    a5.dist = @"2.0 Km";
+    a5.address = @"Nagasandra Circle";
+    
+    self.alAtms = [[NSArray alloc] initWithObjects:a1,a2, nil];
+    self.sbiAtms = [[NSArray alloc] initWithObjects:a3,a4,a5, nil];
 }
 
 @end

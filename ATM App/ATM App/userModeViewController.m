@@ -23,6 +23,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSLog(@"%@ is login id",self.loginId);
+    
     self.searchButton.layer.cornerRadius = 5.0;
     self.locationButton.layer.cornerRadius = 5.0;
     self.rangeButton.layer.cornerRadius = 5.0;
@@ -37,14 +39,14 @@
 - (IBAction)searchForTheLocation:(id)sender
 {
     atmTableViewController *ATVC = [self.storyboard instantiateViewControllerWithIdentifier:@"atm TVC"];
-    ATVC.locationName = @"xyz";
+    ATVC.loginId = self.loginId;
     [self.navigationController pushViewController:ATVC animated:YES];
     NSLog(@"using provided location");
 }
 - (IBAction)useTheCurrentLocation:(id)sender
 {
     atmTableViewController *ATVC = [self.storyboard instantiateViewControllerWithIdentifier:@"atm TVC"];
-    ATVC.locationName = @"xyz";
+    ATVC.loginId = self.loginId;
     [self.navigationController pushViewController:ATVC animated:YES];
     NSLog(@"using current location");
 }
