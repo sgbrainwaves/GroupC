@@ -1,0 +1,17 @@
+insert into details values(1, "vivek", "vivek@gmail.com", "bangalore", "62876345345", "1.jpg");
+insert into details values(2, "trilok", "trilok@gmail.com", "mysore", "12412332444", "2.jpg");
+insert into details values(3, "aditya", "adi@gmail.com", "mumbai", "13251756768", "3.jpg");
+insert into details values(4, "bob", "bob@gmail.com", "SFO", "13998722785", "4.jpg");
+insert into details values(5, "alice", "alice@gmail.com", "LA", "99734235782", "5.jpg");
+
+insert into balance values(1, 1000);
+insert into balance values(2, 2000);
+insert into balance values(3, 3000);
+insert into balance values(4, 4000);
+insert into balance values(5, 5000);
+
+insert into trans values(1, 1, '2015-09-09', 'Debit', 100, ' Trans3');
+insert into trans values(2, 1, '2015-09-08', 'Credit', 200, ' Trans2');
+insert into trans values(3, 1, '2015-09-11', 'Credit', 300, ' Trans5');
+insert into trans values(4, 1, '2015-09-07', 'Debit', 140, ' Trans1');
+insert into trans values(5, 1, '2015-09-10', 'Credit', 500, ' Trans4');

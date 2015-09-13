@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aditya.brainwavehackfrontend" >
+
+    <!-- Accessing the camera hardware -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".com.brainwavehack.BrainwaveHackSamaritanFacialRecognition.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".com.brainwavehack.BrainwaveHackSamaritanFacialRecognition.ImageActivity"
+            android:label="@string/title_activity_image" >
+        </activity>
+        <activity
+            android:name=".com.brainwavehack.BrainwaveHackSamaritanFacialRecognition.UploadImage"
+            android:label="@string/title_activity_image_upload_server" >
+        </activity>
+        <activity
+            android:name=".com.brainwavehack.extras.UploadImageLoader"
+            android:label="@string/title_activity_upload_image_loader" >
+        </activity>
+        <activity
+            android:name=".com.brainwavehack.extras.ImageUploadServer"
+            android:label="Upload Image" >
+        </activity>
+        <activity
+            android:name=".com.brainwavehack.BrainWaveHackSamaritanSpeechRecognition.GoogleVoiceAPI"
+            android:label="@string/title_activity_google_voice_api" >
+        </activity>
+        <activity
+            android:name=".com.brainwavehack.BrainWaveHackSamaritanSpeechRecognition.TextToSpeechActivity"
+            android:label="@string/title_activity_text_to_speech" >
+        </activity>
+        <activity
+            android:name=".com.brainwavehack.BrainWaveHackSamaritanSpeechRecognition.CompleteAutomaticSpeechRecognition"
+            android:label="@string/title_activity_complete_automatic_speech_recognition" >
+        </activity>
+    </application>
+
+</manifest>
