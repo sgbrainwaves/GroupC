@@ -8,6 +8,7 @@
 
 #import "detailForManagerViewController.h"
 #import "ExtraDetail.h"
+#import "Atm_Trans.h"
 
 @interface detailForManagerViewController ()
 
@@ -48,6 +49,72 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)updateDenomination:(id)sender
+{
+    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"AtmTrans"];
+    NSArray *transArray = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    int x = 0;
+    int y = 0;
+    int z = 0;
+    for(int i = 0; i < transArray.count; i++)
+    {
+        Atm_Trans *at = [transArray objectAtIndex:i];
+        
+        if([at.atmId isEqualToString:self.atmObject.atmID])
+        {
+            long ta = at.tr_amt;
+            x += ta/1000;
+            if(ta%1000 == 0){
+                x--;y++;z+=5;
+            } else {
+                int count = ta%1000;
+                y += count/500;
+                if(count%500 == 0){
+                    y--;z+=5;
+                } else {
+                    z += (count%500)/100;
+                }
+            }
+        }
+    }
+    int t = [self HCFwithpara1:x andpara2:y];
+    int res = [self HCFwithpara1:t andpara2:z];
+    x = x/res; //for 1000:r3
+    y = y/res; //for 500:r2
+    z = z/res; //for 100:r1
+    
+    NSData *exdata = [[NSUserDefaults standardUserDefaults] objectForKey:@"ExtraDet"];
+    NSArray *exArray = [NSKeyedUnarchiver unarchiveObjectWithData:exdata];
+    NSMutableArray *mutArray = [[NSMutableArray alloc] initWithArray:exArray];
+    int num = -1;
+    for(int j = 0; j < mutArray.count; j++)
+    {
+        ExtraDetail *ed = [mutArray objectAtIndex:j];
+       if([self.atmObject.atmID isEqualToString:ed.atmID])
+       {
+           num = j;
+           break;
+       }
+    }
+    
+    ExtraDetail *samp = [mutArray objectAtIndex:num];
+    samp.r1 = z;
+    samp.r2 = y;
+    samp.r3 = x;
+    
+    [mutArray replaceObjectAtIndex:num withObject:samp];
+    
+    NSData *pushData = [NSKeyedArchiver archivedDataWithRootObject:mutArray];
+    [[NSUserDefaults standardUserDefaults] setObject:pushData forKey:@"ExtraDet"];
+    [self viewDidLoad];
+}
+
+-(int)HCFwithpara1:(int)a andpara2:(int)b
+{
+    if(a == b) return a;
+    else if(a<b) return [self HCFwithpara1:a andpara2:b-a];
+    else return [self HCFwithpara1:a-b andpara2:b];
 }
 
 /*
