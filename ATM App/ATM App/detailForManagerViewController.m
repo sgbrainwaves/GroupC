@@ -112,9 +112,12 @@
 
 -(int)HCFwithpara1:(int)a andpara2:(int)b
 {
-    if(a == b) return a;
-    else if(a<b) return [self HCFwithpara1:a andpara2:b-a];
-    else return [self HCFwithpara1:a-b andpara2:b];
+    if(a == b)
+        return a;
+    else if(a<b)
+        return [self HCFwithpara1:a andpara2:b-a];
+    else
+        return [self HCFwithpara1:a-b andpara2:b];
 }
 
 /*

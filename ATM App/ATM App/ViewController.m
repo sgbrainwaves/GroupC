@@ -37,7 +37,7 @@
     self.mgMdButton.layer.borderColor = [UIColor grayColor].CGColor;
     self.mgMdButton.layer.cornerRadius = 5.0;
     
-    [self prepareEntireDataBase];
+    
     
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"notFirstLaunch"])
     {
@@ -49,12 +49,13 @@
     {
         //set bool value for later launch.
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"notFirstLaunch"];
+        [self prepareEntireDataBase];
         NSLog(@"first launch work done");
         
     }
 }
 
--(void)viewDidAppear:(BOOL)animated
+/*-(void)viewDidAppear:(BOOL)animated
 {
     NSString *mode = [[NSUserDefaults standardUserDefaults] valueForKey:@"mode"];
     
@@ -78,7 +79,7 @@
     {
         
     }
-}
+}*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -366,11 +367,23 @@
     
     Atm_Trans *at13 = [[Atm_Trans alloc] init];
     at13.atmId = @"ALH_2";
-    at13.tr_amt = 900;
+    at13.tr_amt = 1900;
     
     Atm_Trans *at14 = [[Atm_Trans alloc] init];
     at14.atmId = @"SB_3";
     at14.tr_amt = 2100;
+    
+    Atm_Trans *at15 = [[Atm_Trans alloc] init];
+    at15.atmId = @"SB_3";
+    at15.tr_amt = 4100;
+    
+    Atm_Trans *at16 = [[Atm_Trans alloc] init];
+    at16.atmId = @"SB_2";
+    at16.tr_amt = 2600;
+    
+    Atm_Trans *at17 = [[Atm_Trans alloc] init];
+    at17.atmId = @"ALH_2";
+    at17.tr_amt = 1100;
     
     NSMutableArray *AtmTrans = [[NSMutableArray alloc] initWithObjects:at1,at2,at3,at4,at5,at6,at7,at8,at9,at10,at11,at12,at13,at14, nil];
     NSData *myData = [NSKeyedArchiver archivedDataWithRootObject:AtmTrans];
